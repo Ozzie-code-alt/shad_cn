@@ -1,5 +1,8 @@
 import Navbar from "@/components/Nav";
 import { Button } from "@/components/ui/button";
+import  { ProfileForm } from "@/components/User-Form";
+
+
 export default function Home() {
   return (
     <>
@@ -9,8 +12,9 @@ export default function Home() {
         <p className="text-2xl text-muted-foreground">some simple description here</p>
         <div className="flex gap-6  items-center justify-center">
           <Button>Hello sample Button test</Button>
-          <Button>Another one</Button>
+          <Button variant={"secondary"}>Another one</Button>
         </div>
+        <ProfileForm/>
       </section>
     </>
   );
